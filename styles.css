@@ -1,0 +1,178 @@
+.museo {
+    font-family: Museo-700;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	color: #333333;
+	font-size: 4.5rem;
+	margin-right: 1rem;
+}
+
+.social a { 
+	color: black; 
+	line-height: 100px;
+}
+
+.social a:hover {
+	color: grey;
+	text-decoration: none;
+}
+
+#top { margin:3rem 0 1.5rem 0; }
+
+.navbar-nav li { 
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	margin: 0 1rem;
+	color: white;
+	padding: 0 1rem;
+}
+
+.nav-item-highlight a {
+	border: 1px solid rgb(68, 166, 247);
+	background-color: rgb(68, 166, 247);
+	z-index: -1;
+}
+
+.navbar-collapse { background-color: black; }
+
+.nav-link {
+	color: white;
+	height: 1.6rem;
+	width: 8rem;
+}
+
+.reel-heading {
+	color: white;
+	padding: 0.5rem 0 0.25rem 1rem;
+}
+
+#box1, #box2 {
+	border: 1px solid black;
+	background-color: black;
+	position: relative;
+}
+
+#box1:before, #box2:before {
+	-webkit-transform: skew(0deg, 6deg);
+	box-shadow:5px 5px 15px 10px rgb(59, 58, 58);
+    position:absolute;
+	background-color:rgb(59, 58, 58);
+	bottom: 7px;
+	right: 25px;
+	content:'';
+	z-index:-6;
+	width:100px;
+	height:25px;		
+}
+
+#box1:after, #box2:after {
+	-webkit-transform: skew(0deg, -6deg);
+	box-shadow:5px 5px 15px 10px rgb(59, 58, 58);
+    position:absolute;
+	background-color: rgb(59, 58, 58);
+	bottom: 7px;
+	left: 25px;
+	content:'';
+	z-index:-5;
+	width:100px;
+	height:25px;		
+}
+
+.card.home {
+	border: 10px solid black;
+	background-color: black;
+	position: relative;
+}
+
+.card.home:before {
+	-webkit-transform: skew(0deg, 6deg);
+	box-shadow:15px 15px 15px 10px rgb(59, 58, 58);
+    position:absolute;
+	background-color:rgb(59, 58, 58);
+	bottom: 7px;
+	right: 25px;
+	content:'';
+	z-index:-6;
+	width:200px;
+	height:25px;		
+}
+
+.card.home:after {
+	-webkit-transform: skew(0deg, -6deg);
+	box-shadow:15px 15px 15px 10px rgb(59, 58, 58);
+    position:absolute;
+	background-color: rgb(59, 58, 58);
+	bottom: 7px;
+	left: 5px;
+	content:'';
+	z-index:-5;
+	width:200px;
+	height:25px;		
+}
+
+.card-body { font-size: 12px; }
+
+#box2 { margin-left: 6rem; }
+
+.card-right { margin-left: 6rem; }
+
+.headings {
+	animation-delay: 2s;
+	animation-duration: 3s;
+	animation-name: slidefadein;
+	animation-fill-mode: backwards;
+}
+
+@keyframes slidefadein { 
+	0% {
+		opacity: 0;
+		margin-left: 10%;
+		width: 100%
+	}
+	
+	100% {
+		opacity: 1;
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+
+h5 {
+	border: 1px solid rgb(68, 166, 247);
+	background-color: rgb(68, 166, 247);
+	border-radius: 20px;
+	margin: 0 150px;
+	padding: 8px 8px;
+	color: white;
+	font-size: 15px;
+}
+
+.card-body p { 
+	font-family: Raleway, sans-serif;
+	font-size: 15px;
+}
+
+.thumb:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}  
+
+.bluebox {
+	border: 1px solid rgb(68, 166, 247);
+	background-color: rgb(68, 166, 247);
+	border-radius: 20px;
+	width: 60%;
+	color: white;
+	margin: 30px 300px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+.bluebox div a {
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
